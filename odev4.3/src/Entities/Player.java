@@ -1,6 +1,8 @@
+package Entities;
+
 import java.util.Date;
 
-public class NewMember {
+public class Player {
 
 	private int id;
 	private String firstName;
@@ -8,10 +10,10 @@ public class NewMember {
 	private String nationalityId;
 	private Date dateOfBirth;
 
-	public NewMember() {
+	public Player() {
 	}
 
-	public NewMember(int id, String firstName, String lastName, String nationalityId, Date dateOfBirth) {
+	public Player(int id, String firstName, String lastName, String nationalityId, Date dateOfBirth) {
 		super();
 		this.id = id;
 		this.firstName = firstName;

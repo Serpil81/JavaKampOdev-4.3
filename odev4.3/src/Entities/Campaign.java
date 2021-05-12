@@ -1,25 +1,18 @@
+package Entities;
 
 public class Campaign {
 
-	private int campaignId;
+	private int discount;
 	private String campaignName;
 
 	public Campaign() {
 
 	}
 
-	public Campaign(int campaignId, String campaignName) {
+	public Campaign(int discount, String campaignName) {
 		super();
-		this.campaignId = campaignId;
+		this.setDiscount(discount);
 		this.campaignName = campaignName;
-	}
-
-	public int getCampaignId() {
-		return campaignId;
-	}
-
-	public void setCampaignId(int campaignId) {
-		this.campaignId = campaignId;
 	}
 
 	public String getCampaignName() {
@@ -28,6 +21,14 @@ public class Campaign {
 
 	public void setCampaignName(String campaignName) {
 		this.campaignName = campaignName;
+	}
+
+	public int getDiscount() {
+		return discount;
+	}
+
+	public void setDiscount(int discount) {
+		this.discount = discount;
 	}
 
 }
