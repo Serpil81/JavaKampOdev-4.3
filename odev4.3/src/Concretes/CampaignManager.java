@@ -7,7 +7,7 @@ import Entities.Player;
 
 public class CampaignManager implements CampaignService {
 
-	public CampaignManager(Player serpil, Game sims, Campaign kapatýyoruz, CampaignManager kampanyaYönetimi) {
+	public CampaignManager(Player player, Game game, Campaign campaign, CampaignManager _CampaignManager) {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -17,21 +17,20 @@ public class CampaignManager implements CampaignService {
 
 	@Override
 	public void addnewCapaign(Campaign campaign) {
-		System.out.println("%15 Ýndirimli yeni kampanya giriþi yapýlmýþtýr. Açýklama: " + campaign.getCampaignName()
-				+ " " + campaign.getDiscount());
+		System.out.println("%" + campaign.getDiscount() + " Ýndirimli yeni kampanya giriþi yapýlmýþtýr. Açýklama: "
+				+ campaign.getCampaignName());
 
 	}
 
 	@Override
 	public void removeCampaign(Campaign campaign) {
-		System.out.println("Ýndirimli kampanya hakkýnýz kaldýrýlmýþtýr. Detay :" + campaign.getCampaignName() + " % "
-				+ campaign.getDiscount());
+		System.out.println("Ýndirimli kampanya hakkýnýz kaldýrýlmýþtýr. Detay :" + campaign.getCampaignName());
 	}
 
 	@Override
 	public void updateCampaign(Campaign campaign) {
-		System.out.println(
-				"Kmpanyanýz Güncellenmiþtir. Yeni Kampanyanýz: Yüzyýlýn Kampanyasý, % 25 indirimli ve artýk sizin için tanýmlý!");
+		System.out.println("Kmpanyanýz Güncellenmiþtir. Yeni Kampanyanýz: Yüzyýlýn Kampanyasý," + "% "
+				+ campaign.getDiscount() + "indirimli ve artýk sizin için tanýmlý!");
 	}
 
 }
